@@ -69,6 +69,7 @@ void loop() {
         ledState = !HIGH;
         Gamepad.releaseAll();
       }
+      Gamepad.write();
     }
   }
 
@@ -76,6 +77,6 @@ void loop() {
   digitalWrite(ledPin, ledState);
 
   lastButtonState = reading;
-
-  Gamepad.write();
+  
+ 
 }
